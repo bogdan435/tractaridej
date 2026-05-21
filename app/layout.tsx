@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "Tractări auto și transport pe platformă în Dej, Cluj, Bistrița, Sălaj și Maramureș. Transport auto intern și internațional. Disponibili NON-STOP 24/7. Sună: +40 767 121 351",
   keywords:
-    "tractari auto dej, tractari cluj, platforma auto dej, asistenta rutiera dej, tractari non-stop dej, transport auto platforma, tractari gherla, tractari beclean, tractari bistrita, transport auto international, tractari 24/7",
+    "tractari auto dej, tractari cluj, platforma auto dej, asistenta rutiera dej, tractari non-stop dej, transport auto platforma, tractari gherla, tractari beclean, tractari bistrita, transport auto international, tractari 24/7, tractari auto non stop, pret platforma auto, pret tractari auto, platforma auto non stop, tractati auto, pret tractare auto, remorcari auto, asistenta auto, tractari autostrada, tractari moto, tractare masini, platforma auto ieftina, auto tractari, tractare autostrada, tractari auto autostrada a3",
   metadataBase: new URL("https://tractaridej.com"),
   alternates: { canonical: "https://tractaridej.com" },
   applicationName: "CHC AUTO GARAGE SRL",
