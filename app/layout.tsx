@@ -13,18 +13,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tractări Auto Dej | CHC AUTO GARAGE SRL | +40 767 121 351",
+  title: "Tractări Auto Dej | Platforma Auto 24/7 | CHC AUTO GARAJE SRL",
   description:
-    "Servicii de tractări și transport auto intern și internațional în Dej și județul Cluj. Disponibili 24/7. Sunați acum: +40 767 121 351",
+    "Tractări auto și transport pe platforma în Dej, Cluj, Bistrița, Sălaj, Maramureș. Transport auto intern și internațional. Disponibili NON-STOP 24/7. Sunați: +40 767 121 351",
   keywords:
-    "tractari dej, tractari cluj, transport auto dej, tractari auto, platforma transport auto, tractari 24/7",
+    "tractari auto dej, tractari cluj, platforma auto dej, asistenta rutiera dej, tractari non-stop dej, transport auto platforma, tractari gherla, tractari beclean, tractari bistrita, transport auto international, tractari 24/7",
   metadataBase: new URL("https://www.tractaridej.com"),
   alternates: { canonical: "https://www.tractaridej.com" },
   openGraph: {
-    title: "Tractări Auto Dej | CHC AUTO GARAGE SRL",
-    description: "Servicii de tractări și transport auto intern și internațional. Disponibili 24/7.",
+    title: "Tractări Auto Dej | CHC AUTO GARAJE SRL | NON-STOP 24/7",
+    description: "Tractări și transport auto intern și internațional în Dej și județele vecine. Disponibili NON-STOP 24/7.",
     url: "https://www.tractaridej.com",
-    siteName: "CHC AUTO GARAGE SRL",
+    siteName: "CHC AUTO GARAJE SRL",
     locale: "ro_RO",
     type: "website",
     images: [
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         url: "/START_SITE.jpeg",
         width: 1200,
         height: 630,
-        alt: "CHC AUTO GARAGE SRL - Tractări Dej",
+        alt: "Tractări Auto Dej - CHC AUTO GARAJE SRL",
       },
     ],
   },
