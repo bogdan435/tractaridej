@@ -74,12 +74,48 @@ export default function Home() {
         </div>
         <div className="w-14 h-0.5 bg-yellow-400 my-7" />
         <p className="text-gray-500 uppercase tracking-widest text-xs mb-3">Suna acum</p>
-        <a
-          href="tel:+40767121351"
-          className="text-white font-bold text-4xl sm:text-5xl tracking-wide px-6 py-3 border border-yellow-400/30 rounded hover:bg-yellow-400 hover:text-black transition-all duration-200"
+        <div
+          style={{
+            display: "flex",
+            gap: "16px",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            marginTop: "8px",
+          }}
         >
-          +40 767 121 351
-        </a>
+          <a
+            href="tel:+40767121351"
+            style={{
+              color: "#0d0d0d",
+              background: "#F5C518",
+              fontSize: "clamp(1.2rem,4vw,2rem)",
+              fontWeight: 900,
+              textDecoration: "none",
+              padding: "16px 36px",
+              letterSpacing: "0.04em",
+              clipPath: "polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%)",
+            }}
+          >
+            📞 +40 767 121 351
+          </a>
+          <a
+            href="https://wa.me/40767121351"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: "white",
+              background: "#25D366",
+              fontSize: "clamp(1.2rem,4vw,2rem)",
+              fontWeight: 900,
+              textDecoration: "none",
+              padding: "16px 36px",
+              letterSpacing: "0.04em",
+              clipPath: "polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%)",
+            }}
+          >
+            💬 WhatsApp
+          </a>
+        </div>
         <p className="text-gray-600 uppercase tracking-widest text-xs mt-7">
           Site in constructie
         </p>
