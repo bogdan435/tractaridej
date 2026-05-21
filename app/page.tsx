@@ -18,7 +18,7 @@ export default function Home() {
       <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/30 to-black/85" />
       <div className="absolute top-5 left-5 w-8 h-8 border-t-2 border-l-2 border-yellow-400 opacity-40 z-10" />
       <div className="absolute bottom-5 right-5 w-8 h-8 border-b-2 border-r-2 border-yellow-400 opacity-40 z-10" />
-      <div className="relative z-10 flex flex-col items-center">
+      <div className="relative z-10 flex flex-col items-center" style={{ paddingBottom: "80px" }}>
         <svg
           width="min(500px, 85vw)"
           viewBox="0 0 600 140"
@@ -105,12 +105,10 @@ export default function Home() {
       </div>
       <div
         style={{
-          position: "absolute",
-          bottom: "64px",
-          left: 0,
-          right: 0,
+          position: "relative",
           zIndex: 1,
           textAlign: "center",
+          marginTop: "24px",
         }}
       >
         <p
@@ -139,16 +137,15 @@ export default function Home() {
       </div>
       <footer
         style={{
-          position: "absolute",
-          bottom: 0,
-          left: 0,
-          right: 0,
-          padding: "12px 24px",
+          position: "relative",
+          width: "100%",
+          padding: "16px 24px",
           borderTop: "1px solid rgba(245,197,24,0.15)",
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "center",
-          gap: "8px 24px",
+          gap: "8px 16px",
+          marginTop: "24px",
         }}
       >
         <span style={{ color: "#444", fontSize: "0.7rem", letterSpacing: "0.08em", textTransform: "uppercase" }}>
