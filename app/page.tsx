@@ -99,9 +99,6 @@ export default function Home() {
             📞 +40 767 121 351
           </a>
         </div>
-        <p className="text-gray-600 uppercase tracking-widest text-xs mt-7">
-          Site in constructie
-        </p>
       </div>
       <div
         style={{
