@@ -296,6 +296,31 @@ export default function Home() {
                 Acoperire
               </p>
             </div>
+            <div style={{ width: "1px", background: "rgba(245,197,24,0.2)" }} />
+            <div style={{ textAlign: "center" }}>
+              <p
+                style={{
+                  color: "#F5C518",
+                  fontWeight: 900,
+                  fontSize: "clamp(1.5rem,5vw,2.2rem)",
+                  margin: 0,
+                  lineHeight: 1,
+                }}
+              >
+                🇷🇴🇬🇧🇩🇪
+              </p>
+              <p
+                style={{
+                  color: "#888",
+                  fontSize: "0.7rem",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.1em",
+                  margin: 0,
+                }}
+              >
+                Limbi vorbite
+              </p>
+            </div>
           </div>
           <p
             className="hero-callout mb-3 text-gray-500 uppercase tracking-widest"
