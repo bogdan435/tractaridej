@@ -15,6 +15,16 @@ export default function Home() {
       answer:
         "Intervenim pentru tractări auto în Dej, Cluj, Gherla, Beclean, Bistrița-Năsăud, Sălaj și Maramureș. La nevoie, putem asigura și transport auto pe platformă în alte zone din țară sau internațional.",
     },
+    {
+      question: "Care este prețul pentru tractare auto și platforma auto?",
+      answer:
+        "Prețurile pentru tractare auto și platforma auto variază în funcție de distanță și tipul vehiculului. Oferim prețuri corecte și transparente pentru tractări auto, remorcări auto și asistență rutieră. Contactați-ne pentru un preț personalizat.",
+    },
+    {
+      question: "Efectuați tractări auto pe autostradă, inclusiv A3?",
+      answer:
+        "Da, efectuăm tractări auto pe autostradă, inclusiv pe Autostrada A3, non-stop 24/7. Intervenim rapid pentru orice tip de vehicul: autoturisme, motociclete, dube și camioane.",
+    },
   ];
 
   const localBusinessSchema = {
