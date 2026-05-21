@@ -148,7 +148,6 @@ export default function Home() {
             gap: "12px",
             flexWrap: "wrap",
             justifyContent: "center",
-            marginTop: "20px",
           }}
         >
           <span
