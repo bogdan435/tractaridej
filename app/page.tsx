@@ -161,6 +161,29 @@ export default function Home() {
           © {new Date().getFullYear()} CHC AUTO GARAJE SRL. Toate drepturile rezervate.
         </span>
       </footer>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "CHC AUTO GARAJE SRL",
+            description: "Servicii de tractări și transport auto intern și internațional",
+            url: "https://www.tractaridej.com",
+            telephone: "+40767121351",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "Str. Florilor 44",
+              addressLocality: "Dej",
+              addressRegion: "Cluj",
+              postalCode: "405200",
+              addressCountry: "RO",
+            },
+            openingHours: "Mo-Su 00:00-24:00",
+            priceRange: "$$",
+          }),
+        }}
+      />
     </main>
   );
 }
