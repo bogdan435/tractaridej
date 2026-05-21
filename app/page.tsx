@@ -1,4 +1,73 @@
 export default function Home() {
+  const faqItems = [
+    {
+      question: "Oferiți tractări auto non-stop în Dej și Cluj?",
+      answer:
+        "Da. Oferim servicii de tractare auto și asistență rutieră în Dej, județul Cluj. Tractăm autoturisme, dube, microbuze și utilaje agricole pe platformă, cu intervenție rapidă în Dej, Gherla, Beclean, Bistrița, Sălaj și Maramureș.",
+    },
+    {
+      question: "Asigurați transport auto intern și internațional?",
+      answer:
+        "Da. Asigurăm transport pe platformă în toată România și în Europa pentru mașini defecte, mașini implicate în accidente, autoturisme noi neînmatriculate pentru ITP și RAR, precum și alte tipuri de transport auto la cerere.",
+    },
+    {
+      question: "În ce zone interveniți pentru tractări auto?",
+      answer:
+        "Intervenim pentru tractări auto în Dej, Cluj, Gherla, Beclean, Bistrița-Năsăud, Sălaj și Maramureș. La nevoie, putem asigura și transport auto pe platformă în alte zone din țară sau internațional.",
+    },
+  ];
+
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://tractaridej.com/#business",
+    name: "CHC AUTO GARAJE SRL",
+    alternateName: "CHC AUTO GARAGE SRL",
+    description:
+      "Tractări auto și transport pe platformă în Dej, Cluj, Bistrița, Sălaj și Maramureș. Transport auto intern și internațional. Disponibili NON-STOP 24/7.",
+    url: "https://tractaridej.com",
+    image: "https://tractaridej.com/START_SITE.jpeg",
+    logo: "https://tractaridej.com/logo-chc.svg",
+    telephone: "+40767121351",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Str. Florilor 44",
+      addressLocality: "Dej",
+      addressRegion: "Cluj",
+      postalCode: "405200",
+      addressCountry: "RO",
+    },
+    areaServed: ["Dej", "Cluj", "Bistrița-Năsăud", "Sălaj", "Maramureș"],
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        opens: "00:00",
+        closes: "23:59",
+      },
+    ],
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+40767121351",
+      contactType: "customer service",
+      availableLanguage: ["Romanian"],
+    },
+    priceRange: "$$",
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <main className="relative w-screen h-screen flex flex-col items-center justify-center text-center overflow-x-hidden overflow-y-auto px-5">
       <div
@@ -93,6 +162,26 @@ export default function Home() {
           </a>
         </div>
       </div>
+      <section className="relative z-10 mt-10 w-full max-w-3xl">
+        <p className="mb-4 text-center text-xs uppercase tracking-[0.24em] text-[#8f8f8f]">
+          Intrebari frecvente
+        </p>
+        <div className="flex flex-col gap-3">
+          {faqItems.map((faq) => (
+            <details
+              key={faq.question}
+              className="overflow-hidden border border-yellow-400/15 bg-black/30 text-left shadow-[0_20px_60px_rgba(0,0,0,0.25)] backdrop-blur-sm"
+            >
+              <summary className="cursor-pointer px-5 py-4 text-sm font-semibold uppercase tracking-wide text-white marker:text-yellow-400">
+                {faq.question}
+              </summary>
+              <p className="border-t border-white/5 px-5 py-4 text-sm leading-6 text-gray-300">
+                {faq.answer}
+              </p>
+            </details>
+          ))}
+        </div>
+      </section>
       <div
         style={{
           position: "relative",
@@ -157,51 +246,13 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "@id": "https://tractaridej.com/#business",
-            name: "CHC AUTO GARAJE SRL",
-            alternateName: "CHC AUTO GARAGE SRL",
-            description:
-              "Tractări auto și transport pe platformă în Dej, Cluj, Bistrița, Sălaj și Maramureș. Transport auto intern și internațional. Disponibili NON-STOP 24/7.",
-            url: "https://tractaridej.com",
-            image: "https://tractaridej.com/START_SITE.jpeg",
-            logo: "https://tractaridej.com/logo-chc.svg",
-            telephone: "+40767121351",
-            address: {
-              "@type": "PostalAddress",
-              streetAddress: "Str. Florilor 44",
-              addressLocality: "Dej",
-              addressRegion: "Cluj",
-              postalCode: "405200",
-              addressCountry: "RO",
-            },
-            areaServed: ["Dej", "Cluj", "Bistrița-Năsăud", "Sălaj", "Maramureș"],
-            openingHoursSpecification: [
-              {
-                "@type": "OpeningHoursSpecification",
-                dayOfWeek: [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday",
-                  "Saturday",
-                  "Sunday",
-                ],
-                opens: "00:00",
-                closes: "23:59",
-              },
-            ],
-            contactPoint: {
-              "@type": "ContactPoint",
-              telephone: "+40767121351",
-              contactType: "customer service",
-              availableLanguage: ["Romanian"],
-            },
-            priceRange: "$$",
-          }),
+          __html: JSON.stringify(localBusinessSchema),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema),
         }}
       />
     </main>
