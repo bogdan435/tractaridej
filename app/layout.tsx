@@ -21,9 +21,6 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://tractaridej.com"),
   alternates: { canonical: "https://tractaridej.com" },
   applicationName: "CHC AUTO GARAJE SRL",
-  verification: {
-    google: "jsw6IV0fHBkQnpivIwU9ncp40In1iga6szRTdy8gTQA",
-  },
   openGraph: {
     title: "Tractări Auto Dej | Platformă Auto 24/7 | CHC AUTO GARAJE SRL",
     description:
@@ -41,14 +38,17 @@ export const metadata: Metadata = {
       },
     ],
   },
+  robots: { index: true, follow: true },
   twitter: {
     card: "summary_large_image",
-    title: "Tractări Auto Dej | Platformă Auto 24/7 | CHC AUTO GARAJE SRL",
+    title: "Tractări Auto Dej | CHC AUTO GARAJE SRL | NON-STOP 24/7",
     description:
-      "Tractări auto și transport pe platformă în Dej și județele vecine. Disponibili NON-STOP 24/7.",
+      "Tractări și transport auto intern și internațional în Dej. Disponibili NON-STOP 24/7. +40 767 121 351",
     images: ["/START_SITE.jpeg"],
   },
-  robots: { index: true, follow: true },
+  verification: {
+    google: "jsw6IV0fHBkQnpivIwU9ncp40In1iga6szRTdy8gTQA",
+  },
 };
 
 export default function RootLayout({
