@@ -162,6 +162,10 @@ export default function Home() {
         <span style={{ color: "#444", fontSize: "0.7rem", letterSpacing: "0.08em" }}>CUI: 36865232</span>
         <span style={{ color: "#333", fontSize: "0.7rem" }}>|</span>
         <span style={{ color: "#444", fontSize: "0.7rem", letterSpacing: "0.08em" }}>J12/4447/2016</span>
+        <span style={{ color: "#333", fontSize: "0.7rem" }}>|</span>
+        <span style={{ color: "#444", fontSize: "0.7rem", letterSpacing: "0.08em" }}>
+          © {new Date().getFullYear()} CHC AUTO GARAJE SRL. Toate drepturile rezervate.
+        </span>
       </footer>
     </main>
   );
