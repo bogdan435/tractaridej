@@ -19,6 +19,11 @@ export default function Home() {
       <div className="absolute top-5 left-5 w-8 h-8 border-t-2 border-l-2 border-yellow-400 opacity-40 z-10" />
       <div className="absolute bottom-5 right-5 w-8 h-8 border-b-2 border-r-2 border-yellow-400 opacity-40 z-10" />
       <div className="relative z-10 flex flex-col items-center">
+        <img
+          src="/logo-chc.svg"
+          alt="CHC AUTO GARAJE SRL"
+          style={{ width: "min(500px, 85vw)", marginBottom: "24px" }}
+        />
         <h1 className="font-black uppercase text-white leading-none text-5xl sm:text-7xl md:text-8xl">
           CHC AUTO<br />
           <span className="text-yellow-400">GARAJE</span> SRL
