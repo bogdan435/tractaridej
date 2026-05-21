@@ -141,10 +141,63 @@ export default function Home() {
         <p className="text-white uppercase tracking-wide text-sm font-medium mt-4">
           Servicii de tractare - disponibili 24/7
         </p>
-        <div className="flex items-center gap-3 mt-5 flex-wrap justify-center">
-          <span className="text-white uppercase tracking-wide text-sm font-medium">Transport intern</span>
-          <span className="text-yellow-400 opacity-60">|</span>
-          <span className="text-white uppercase tracking-wide text-sm font-medium">Transport international</span>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "12px",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            marginTop: "20px",
+          }}
+        >
+          <span
+            style={{
+              color: "white",
+              textTransform: "uppercase",
+              letterSpacing: "0.06em",
+              fontSize: "clamp(0.8rem,2.5vw,0.95rem)",
+              fontWeight: 500,
+            }}
+          >
+            Tractări Auto
+          </span>
+          <span style={{ color: "#F5C518", opacity: 0.6 }}>•</span>
+          <span
+            style={{
+              color: "white",
+              textTransform: "uppercase",
+              letterSpacing: "0.06em",
+              fontSize: "clamp(0.8rem,2.5vw,0.95rem)",
+              fontWeight: 500,
+            }}
+          >
+            Transport Auto
+          </span>
+          <span style={{ color: "#F5C518", opacity: 0.6 }}>•</span>
+          <span
+            style={{
+              color: "white",
+              textTransform: "uppercase",
+              letterSpacing: "0.06em",
+              fontSize: "clamp(0.8rem,2.5vw,0.95rem)",
+              fontWeight: 500,
+            }}
+          >
+            Transport Marfă România & UE
+          </span>
+          <span style={{ color: "#F5C518", opacity: 0.6 }}>•</span>
+          <span
+            style={{
+              color: "white",
+              textTransform: "uppercase",
+              letterSpacing: "0.06em",
+              fontSize: "clamp(0.8rem,2.5vw,0.95rem)",
+              fontWeight: 500,
+            }}
+          >
+            Asistență Rutieră 24/7
+          </span>
         </div>
         <div className="w-14 h-0.5 bg-yellow-400 my-7" />
         <p className="text-gray-500 uppercase tracking-widest text-xs mb-3">Suna acum</p>
