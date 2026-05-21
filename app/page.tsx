@@ -120,6 +120,32 @@ export default function Home() {
           Site in constructie
         </p>
       </div>
+      <footer
+        style={{
+          position: "absolute",
+          bottom: 0,
+          left: 0,
+          right: 0,
+          padding: "12px 24px",
+          borderTop: "1px solid rgba(245,197,24,0.15)",
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          gap: "8px 24px",
+        }}
+      >
+        <span style={{ color: "#444", fontSize: "0.7rem", letterSpacing: "0.08em", textTransform: "uppercase" }}>
+          CHC AUTO GARAJE SRL
+        </span>
+        <span style={{ color: "#333", fontSize: "0.7rem" }}>|</span>
+        <span style={{ color: "#444", fontSize: "0.7rem", letterSpacing: "0.08em" }}>
+          Str. Florilor 44, Dej, Jud. Cluj
+        </span>
+        <span style={{ color: "#333", fontSize: "0.7rem" }}>|</span>
+        <span style={{ color: "#444", fontSize: "0.7rem", letterSpacing: "0.08em" }}>CUI: 36865232</span>
+        <span style={{ color: "#333", fontSize: "0.7rem" }}>|</span>
+        <span style={{ color: "#444", fontSize: "0.7rem", letterSpacing: "0.08em" }}>J12/4447/2016</span>
+      </footer>
     </main>
   );
 }
