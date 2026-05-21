@@ -21,8 +21,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "@id": "https://tractaridej.com/#business",
-    name: "CHC AUTO GARAJE SRL",
-    alternateName: "CHC AUTO GARAGE SRL",
+    name: "CHC AUTO GARAGE SRL",
     description:
       "Tractări auto și transport pe platformă în Dej, Cluj, Bistrița, Sălaj și Maramureș. Transport auto intern și internațional. Disponibili NON-STOP 24/7.",
     url: "https://tractaridej.com",
