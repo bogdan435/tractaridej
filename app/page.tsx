@@ -221,6 +221,82 @@ export default function Home() {
             </span>
           </div>
           <div className="w-14 h-0.5 bg-yellow-400 my-7" />
+          <div style={{ display: "flex", gap: "24px", flexWrap: "wrap", justifyContent: "center", margin: "8px 0" }}>
+            <div style={{ textAlign: "center" }}>
+              <p
+                style={{
+                  color: "#F5C518",
+                  fontWeight: 900,
+                  fontSize: "clamp(1.5rem,5vw,2.2rem)",
+                  margin: 0,
+                  lineHeight: 1,
+                }}
+              >
+                10+
+              </p>
+              <p
+                style={{
+                  color: "#888",
+                  fontSize: "0.7rem",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.1em",
+                  margin: 0,
+                }}
+              >
+                Ani experiență
+              </p>
+            </div>
+            <div style={{ width: "1px", background: "rgba(245,197,24,0.2)" }} />
+            <div style={{ textAlign: "center" }}>
+              <p
+                style={{
+                  color: "#F5C518",
+                  fontWeight: 900,
+                  fontSize: "clamp(1.5rem,5vw,2.2rem)",
+                  margin: 0,
+                  lineHeight: 1,
+                }}
+              >
+                24/7
+              </p>
+              <p
+                style={{
+                  color: "#888",
+                  fontSize: "0.7rem",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.1em",
+                  margin: 0,
+                }}
+              >
+                Non-stop
+              </p>
+            </div>
+            <div style={{ width: "1px", background: "rgba(245,197,24,0.2)" }} />
+            <div style={{ textAlign: "center" }}>
+              <p
+                style={{
+                  color: "#F5C518",
+                  fontWeight: 900,
+                  fontSize: "clamp(1.5rem,5vw,2.2rem)",
+                  margin: 0,
+                  lineHeight: 1,
+                }}
+              >
+                RO+UE
+              </p>
+              <p
+                style={{
+                  color: "#888",
+                  fontSize: "0.7rem",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.1em",
+                  margin: 0,
+                }}
+              >
+                Acoperire
+              </p>
+            </div>
+          </div>
           <p
             className="hero-callout mb-3 text-gray-500 uppercase tracking-widest"
             style={{ fontSize: "0.75rem" }}
