@@ -37,7 +37,19 @@ export default function Home() {
       postalCode: "405200",
       addressCountry: "RO",
     },
-    areaServed: ["Dej", "Cluj", "Bistrița-Năsăud", "Sălaj", "Maramureș"],
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: "47.1332",
+      longitude: "23.8753",
+    },
+    areaServed: ["Dej", "Cluj", "Gherla", "Beclean", "Bistrița-Năsăud", "Sălaj", "Maramureș"],
+    serviceType: [
+      "Tractări auto",
+      "Transport auto platforma",
+      "Asistență rutieră",
+      "Transport internațional",
+    ],
+    hasMap: "https://maps.google.com/?q=Str+Florilor+44+Dej+Cluj",
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
