@@ -428,6 +428,8 @@ export default function Home() {
             <img
               src="/alphacont-logo.svg"
               alt="Alphacont"
+              width="120"
+              height="32"
               style={{ height: "32px", filter: "brightness(0) invert(1)" }}
             />
           </a>
