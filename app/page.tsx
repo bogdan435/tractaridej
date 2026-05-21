@@ -1,10 +1,3 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "CHC AUTO GARAGE SRL - Tractari Dej",
-  description: "Tractari si transport auto intern si international. Disponibili 24/7.",
-};
-
 export default function Home() {
   return (
     <main className="relative w-screen h-screen flex flex-col items-center justify-center text-center overflow-x-hidden overflow-y-auto px-5">
@@ -167,9 +160,14 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: "CHC AUTO GARAGE SRL",
-            description: "Servicii de tractări și transport auto intern și internațional",
-            url: "https://www.tractaridej.com",
+            "@id": "https://tractaridej.com/#business",
+            name: "CHC AUTO GARAJE SRL",
+            alternateName: "CHC AUTO GARAGE SRL",
+            description:
+              "Tractări auto și transport pe platformă în Dej, Cluj, Bistrița, Sălaj și Maramureș. Transport auto intern și internațional. Disponibili NON-STOP 24/7.",
+            url: "https://tractaridej.com",
+            image: "https://tractaridej.com/START_SITE.jpeg",
+            logo: "https://tractaridej.com/logo-chc.svg",
             telephone: "+40767121351",
             address: {
               "@type": "PostalAddress",
@@ -179,7 +177,29 @@ export default function Home() {
               postalCode: "405200",
               addressCountry: "RO",
             },
-            openingHours: "Mo-Su 00:00-24:00",
+            areaServed: ["Dej", "Cluj", "Bistrița-Năsăud", "Sălaj", "Maramureș"],
+            openingHoursSpecification: [
+              {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday",
+                ],
+                opens: "00:00",
+                closes: "23:59",
+              },
+            ],
+            contactPoint: {
+              "@type": "ContactPoint",
+              telephone: "+40767121351",
+              contactType: "customer service",
+              availableLanguage: ["Romanian"],
+            },
             priceRange: "$$",
           }),
         }}
