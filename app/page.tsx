@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "CHC AUTO GARAJE SRL - Tractari Dej",
+  title: "CHC AUTO GARAGE SRL - Tractari Dej",
   description: "Tractari si transport auto intern si international. Disponibili 24/7.",
 };
 
@@ -48,7 +48,7 @@ export default function Home() {
             letterSpacing="2"
             textAnchor="middle"
           >
-            AUTO GARAJE SRL
+            AUTO GARAGE SRL
           </text>
           <rect x="235" y="64" width="350" height="1.5" fill="#F5C518" opacity="0.5" />
           <text
@@ -146,7 +146,7 @@ export default function Home() {
         }}
       >
         <span style={{ color: "#444", fontSize: "0.7rem", letterSpacing: "0.08em", textTransform: "uppercase" }}>
-          CHC AUTO GARAJE SRL
+          CHC AUTO GARAGE SRL
         </span>
         <span style={{ color: "#333", fontSize: "0.7rem" }}>|</span>
         <span style={{ color: "#444", fontSize: "0.7rem", letterSpacing: "0.08em" }}>
@@ -158,7 +158,7 @@ export default function Home() {
         <span style={{ color: "#444", fontSize: "0.7rem", letterSpacing: "0.08em" }}>J12/4447/2016</span>
         <span style={{ color: "#333", fontSize: "0.7rem" }}>|</span>
         <span style={{ color: "#444", fontSize: "0.7rem", letterSpacing: "0.08em" }}>
-          © {new Date().getFullYear()} CHC AUTO GARAJE SRL. Toate drepturile rezervate.
+          © {new Date().getFullYear()} CHC AUTO GARAGE SRL. Toate drepturile rezervate.
         </span>
       </footer>
       <script
@@ -167,7 +167,7 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: "CHC AUTO GARAJE SRL",
+            name: "CHC AUTO GARAGE SRL",
             description: "Servicii de tractări și transport auto intern și internațional",
             url: "https://www.tractaridej.com",
             telephone: "+40767121351",
