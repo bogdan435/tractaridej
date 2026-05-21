@@ -82,7 +82,10 @@ export default function Home() {
 
   return (
     <>
-      <main className="relative w-screen h-screen flex flex-col items-center justify-center text-center overflow-hidden px-5">
+      <main
+        className="relative w-screen flex flex-col items-center justify-center text-center overflow-x-hidden px-5"
+        style={{ minHeight: "100dvh", overflowY: "auto" }}
+      >
         <div
           className="absolute inset-0 z-0 bg-center bg-cover bg-no-repeat"
           style={{
@@ -93,12 +96,16 @@ export default function Home() {
         <div className="absolute inset-0 z-0 bg-gradient-to-b from-black/30 to-black/85" />
         <div className="absolute top-5 left-5 w-8 h-8 border-t-2 border-l-2 border-yellow-400 opacity-40 z-10" />
         <div className="absolute bottom-5 right-5 w-8 h-8 border-b-2 border-r-2 border-yellow-400 opacity-40 z-10" />
-        <div className="relative z-10 flex flex-col items-center">
+        <div
+          className="relative z-10 flex flex-col items-center"
+          style={{ paddingTop: "20px", paddingBottom: "20px" }}
+        >
           <svg
-            width="min(500px, 85vw)"
+            className="hero-logo"
+            width="min(480px, 90vw)"
             viewBox="0 0 600 140"
             xmlns="http://www.w3.org/2000/svg"
-            style={{ marginBottom: "24px", width: "min(500px, 85vw)" }}
+            style={{ marginBottom: "24px", width: "min(480px, 90vw)" }}
           >
             <rect x="0" y="0" width="600" height="140" fill="#0d0d0d" />
             <polygon points="0,0 240,0 210,140 0,140" fill="#F5C518" />
@@ -139,19 +146,24 @@ export default function Home() {
               TRACTARI • TRANSPORT AUTO • DEJ
             </text>
           </svg>
-          <p className="text-white uppercase tracking-wide text-sm font-medium mt-4">
+          <p
+            className="hero-subtitle mt-4 text-white uppercase tracking-wide font-medium"
+            style={{ fontSize: "0.875rem" }}
+          >
             Servicii de tractare - disponibili 24/7
           </p>
           <div
             style={{
               display: "flex",
               alignItems: "center",
-              gap: "12px",
+              gap: "8px 12px",
               flexWrap: "wrap",
               justifyContent: "center",
+              padding: "0 16px",
             }}
           >
             <span
+              className="service-item"
               style={{
                 color: "white",
                 textTransform: "uppercase",
@@ -162,8 +174,11 @@ export default function Home() {
             >
               Tractări Auto
             </span>
-            <span style={{ color: "#F5C518", opacity: 0.6 }}>•</span>
+            <span className="service-separator" style={{ color: "#F5C518", opacity: 0.6 }}>
+              •
+            </span>
             <span
+              className="service-item"
               style={{
                 color: "white",
                 textTransform: "uppercase",
@@ -174,8 +189,11 @@ export default function Home() {
             >
               Transport Auto
             </span>
-            <span style={{ color: "#F5C518", opacity: 0.6 }}>•</span>
+            <span className="service-separator" style={{ color: "#F5C518", opacity: 0.6 }}>
+              •
+            </span>
             <span
+              className="service-item"
               style={{
                 color: "white",
                 textTransform: "uppercase",
@@ -186,8 +204,11 @@ export default function Home() {
             >
               Transport Marfă România & UE
             </span>
-            <span style={{ color: "#F5C518", opacity: 0.6 }}>•</span>
+            <span className="service-separator" style={{ color: "#F5C518", opacity: 0.6 }}>
+              •
+            </span>
             <span
+              className="service-item"
               style={{
                 color: "white",
                 textTransform: "uppercase",
@@ -200,7 +221,12 @@ export default function Home() {
             </span>
           </div>
           <div className="w-14 h-0.5 bg-yellow-400 my-7" />
-          <p className="text-gray-500 uppercase tracking-widest text-xs mb-3">Suna acum</p>
+          <p
+            className="hero-callout mb-3 text-gray-500 uppercase tracking-widest"
+            style={{ fontSize: "0.75rem" }}
+          >
+            Suna acum
+          </p>
           <div
             style={{
               display: "flex",
@@ -211,11 +237,12 @@ export default function Home() {
             }}
           >
             <a
+              className="hero-phone"
               href="tel:+40767121351"
               style={{
                 color: "#0d0d0d",
                 background: "#F5C518",
-                fontSize: "clamp(1.2rem,4vw,2rem)",
+                fontSize: "clamp(1.2rem, 5vw, 2rem)",
                 fontWeight: 900,
                 textDecoration: "none",
                 padding: "16px 36px",
@@ -230,8 +257,14 @@ export default function Home() {
       </main>
       <div className="relative w-full overflow-x-hidden bg-[#050505] px-5 pb-10 text-center">
         <div className="absolute inset-0 bg-gradient-to-b from-black via-[#050505] to-[#050505]" />
-        <section className="relative z-10 mx-auto w-full max-w-3xl pt-10">
-          <p className="mb-4 text-center text-xs uppercase tracking-[0.24em] text-[#8f8f8f]">
+        <section
+          className="relative z-10 w-full pt-10"
+          style={{ padding: "0 16px", maxWidth: "600px", margin: "0 auto" }}
+        >
+          <p
+            className="faq-kicker mb-4 text-center uppercase tracking-[0.24em] text-[#8f8f8f]"
+            style={{ fontSize: "0.75rem" }}
+          >
             Intrebari frecvente
           </p>
           <div className="flex flex-col gap-3">
@@ -240,10 +273,16 @@ export default function Home() {
                 key={faq.question}
                 className="overflow-hidden border border-yellow-400/15 bg-black/30 text-left shadow-[0_20px_60px_rgba(0,0,0,0.25)] backdrop-blur-sm"
               >
-                <summary className="cursor-pointer px-5 py-4 text-sm font-semibold uppercase tracking-wide text-white marker:text-yellow-400">
+                <summary
+                  className="faq-summary cursor-pointer px-5 py-4 font-semibold uppercase tracking-wide text-white marker:text-yellow-400"
+                  style={{ fontSize: "0.875rem" }}
+                >
                   {faq.question}
                 </summary>
-                <p className="border-t border-white/5 px-5 py-4 text-sm leading-6 text-gray-300">
+                <p
+                  className="faq-answer border-t border-white/5 px-5 py-4 leading-6 text-gray-300"
+                  style={{ fontSize: "0.875rem" }}
+                >
                   {faq.answer}
                 </p>
               </details>
@@ -259,6 +298,7 @@ export default function Home() {
           }}
         >
           <p
+            className="partners-kicker"
             style={{
               color: "#444",
               fontSize: "0.7rem",
@@ -283,31 +323,33 @@ export default function Home() {
           </a>
         </div>
         <footer
+          className="footer-copy"
           style={{
             position: "relative",
             width: "100%",
-            padding: "16px 24px",
+            padding: "12px 16px",
             borderTop: "1px solid rgba(245,197,24,0.15)",
             display: "flex",
             flexWrap: "wrap",
             justifyContent: "center",
-            gap: "8px 16px",
+            gap: "6px 12px",
             marginTop: "24px",
+            fontSize: "0.65rem",
           }}
         >
-          <span style={{ color: "#444", fontSize: "0.7rem", letterSpacing: "0.08em", textTransform: "uppercase" }}>
+          <span style={{ color: "#444", letterSpacing: "0.08em", textTransform: "uppercase" }}>
             CHC AUTO GARAGE SRL
           </span>
-          <span style={{ color: "#333", fontSize: "0.7rem" }}>|</span>
-          <span style={{ color: "#444", fontSize: "0.7rem", letterSpacing: "0.08em" }}>
+          <span style={{ color: "#333" }}>|</span>
+          <span style={{ color: "#444", letterSpacing: "0.08em" }}>
             Str. Florilor 44, Dej, Jud. Cluj
           </span>
-          <span style={{ color: "#333", fontSize: "0.7rem" }}>|</span>
-          <span style={{ color: "#444", fontSize: "0.7rem", letterSpacing: "0.08em" }}>CUI: 36865232</span>
-          <span style={{ color: "#333", fontSize: "0.7rem" }}>|</span>
-          <span style={{ color: "#444", fontSize: "0.7rem", letterSpacing: "0.08em" }}>J12/4447/2016</span>
-          <span style={{ color: "#333", fontSize: "0.7rem" }}>|</span>
-          <span style={{ color: "#444", fontSize: "0.7rem", letterSpacing: "0.08em" }}>
+          <span style={{ color: "#333" }}>|</span>
+          <span style={{ color: "#444", letterSpacing: "0.08em" }}>CUI: 36865232</span>
+          <span style={{ color: "#333" }}>|</span>
+          <span style={{ color: "#444", letterSpacing: "0.08em" }}>J12/4447/2016</span>
+          <span style={{ color: "#333" }}>|</span>
+          <span style={{ color: "#444", letterSpacing: "0.08em" }}>
             © {new Date().getFullYear()} CHC AUTO GARAGE SRL. Toate drepturile rezervate.
           </span>
         </footer>
@@ -324,6 +366,44 @@ export default function Home() {
           __html: JSON.stringify(faqSchema),
         }}
       />
+      <style>{`
+        @media (max-width: 399px) {
+          .hero-logo {
+            width: min(432px, 81vw) !important;
+          }
+
+          .hero-subtitle {
+            font-size: 0.7875rem !important;
+          }
+
+          .service-item,
+          .service-separator {
+            font-size: clamp(0.72rem, 2.25vw, 0.855rem) !important;
+          }
+
+          .hero-callout,
+          .faq-kicker {
+            font-size: 0.675rem !important;
+          }
+
+          .hero-phone {
+            font-size: clamp(1.08rem, 4.5vw, 1.8rem) !important;
+          }
+
+          .faq-summary,
+          .faq-answer {
+            font-size: 0.7875rem !important;
+          }
+
+          .partners-kicker {
+            font-size: 0.63rem !important;
+          }
+
+          .footer-copy {
+            font-size: 0.585rem !important;
+          }
+        }
+      `}</style>
     </>
   );
 }
