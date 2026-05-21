@@ -102,31 +102,40 @@ export default function Home() {
         <p className="text-gray-600 uppercase tracking-widest text-xs mt-7">
           Site in constructie
         </p>
-        <div style={{ position: "relative", zIndex: 1, marginTop: "32px", textAlign: "center" }}>
-          <p
-            style={{
-              color: "#444",
-              fontSize: "0.7rem",
-              letterSpacing: "0.2em",
-              textTransform: "uppercase",
-              marginBottom: "12px",
-            }}
-          >
-            Parteneri
-          </p>
-          <a
-            href="https://alphacont.ro"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block opacity-50 transition-opacity duration-200 hover:opacity-100"
-          >
-            <img
-              src="/alphacont-logo.svg"
-              alt="Alphacont"
-              style={{ height: "32px", filter: "brightness(0) invert(1)" }}
-            />
-          </a>
-        </div>
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          bottom: "64px",
+          left: 0,
+          right: 0,
+          zIndex: 1,
+          textAlign: "center",
+        }}
+      >
+        <p
+          style={{
+            color: "#444",
+            fontSize: "0.7rem",
+            letterSpacing: "0.2em",
+            textTransform: "uppercase",
+            marginBottom: "12px",
+          }}
+        >
+          Parteneri
+        </p>
+        <a
+          href="https://alphacont.ro"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block opacity-50 transition-opacity duration-200 hover:opacity-100"
+        >
+          <img
+            src="/alphacont-logo.svg"
+            alt="Alphacont"
+            style={{ height: "32px", filter: "brightness(0) invert(1)" }}
+          />
+        </a>
       </div>
       <footer
         style={{
