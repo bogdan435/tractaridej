@@ -98,23 +98,6 @@ export default function Home() {
           >
             📞 +40 767 121 351
           </a>
-          <a
-            href="https://wa.me/40767121351"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              color: "white",
-              background: "#25D366",
-              fontSize: "clamp(1.2rem,4vw,2rem)",
-              fontWeight: 900,
-              textDecoration: "none",
-              padding: "16px 36px",
-              letterSpacing: "0.04em",
-              clipPath: "polygon(12px 0%, 100% 0%, calc(100% - 12px) 100%, 0% 100%)",
-            }}
-          >
-            💬 WhatsApp
-          </a>
         </div>
         <p className="text-gray-600 uppercase tracking-widest text-xs mt-7">
           Site in constructie
