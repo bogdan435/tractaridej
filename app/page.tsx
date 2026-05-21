@@ -19,15 +19,51 @@ export default function Home() {
       <div className="absolute top-5 left-5 w-8 h-8 border-t-2 border-l-2 border-yellow-400 opacity-40 z-10" />
       <div className="absolute bottom-5 right-5 w-8 h-8 border-b-2 border-r-2 border-yellow-400 opacity-40 z-10" />
       <div className="relative z-10 flex flex-col items-center">
-        <img
-          src="/logo-chc.svg"
-          alt="CHC AUTO GARAJE SRL"
-          style={{ width: "min(500px, 85vw)", marginBottom: "24px" }}
-        />
-        <h1 className="font-black uppercase text-white leading-none text-5xl sm:text-7xl md:text-8xl">
-          CHC AUTO<br />
-          <span className="text-yellow-400">GARAJE</span> SRL
-        </h1>
+        <svg
+          width="min(500px, 85vw)"
+          viewBox="0 0 600 140"
+          xmlns="http://www.w3.org/2000/svg"
+          style={{ marginBottom: "24px", width: "min(500px, 85vw)" }}
+        >
+          <rect x="0" y="0" width="600" height="140" fill="#0d0d0d" />
+          <polygon points="0,0 240,0 210,140 0,140" fill="#F5C518" />
+          <text
+            x="110"
+            y="95"
+            fontFamily="Arial Narrow, sans-serif"
+            fontWeight="900"
+            fontSize="86"
+            fill="#0d0d0d"
+            textAnchor="middle"
+          >
+            CHC
+          </text>
+          <text
+            x="412"
+            y="52"
+            fontFamily="Arial Narrow, sans-serif"
+            fontWeight="900"
+            fontSize="30"
+            fill="white"
+            letterSpacing="2"
+            textAnchor="middle"
+          >
+            AUTO GARAJE SRL
+          </text>
+          <rect x="235" y="64" width="350" height="1.5" fill="#F5C518" opacity="0.5" />
+          <text
+            x="412"
+            y="94"
+            fontFamily="Arial Narrow, sans-serif"
+            fontWeight="700"
+            fontSize="12"
+            fill="#F5C518"
+            letterSpacing="4"
+            textAnchor="middle"
+          >
+            TRACTARI • TRANSPORT AUTO • DEJ
+          </text>
+        </svg>
         <p className="text-white uppercase tracking-wide text-sm font-medium mt-4">
           Servicii de tractare - disponibili 24/7
         </p>
