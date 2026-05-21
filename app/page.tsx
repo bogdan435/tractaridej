@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="relative w-screen h-screen flex flex-col items-center justify-center text-center overflow-hidden px-5">
+    <main className="relative w-screen h-screen flex flex-col items-center justify-center text-center overflow-x-hidden overflow-y-auto px-5">
       <div
         className="absolute inset-0 z-0 bg-center bg-cover bg-no-repeat"
         style={{
