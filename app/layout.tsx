@@ -22,6 +22,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://tractaridej.com"),
   alternates: { canonical: "https://tractaridej.com" },
   applicationName: "CHC AUTO GARAGE SRL",
+  icons: {
+    icon: "/logo-chc.svg",
+    shortcut: "/logo-chc.svg",
+    apple: "/logo-chc.svg",
+  },
   openGraph: {
     title: "Tractări Auto Dej | Platformă Auto 24/7 | CHC AUTO GARAGE SRL",
     description:
