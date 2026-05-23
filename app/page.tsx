@@ -33,7 +33,7 @@ export default function Home() {
     "@id": "https://tractaridej.com/#business",
     name: "CHC AUTO GARAGE SRL",
     description:
-      "Tractări auto și transport pe platformă în Dej, Cluj, Bistrița, Sălaj și Maramureș. Transport auto intern și internațional. Disponibili NON-STOP 24/7.",
+      "Tractări auto NON-STOP 24/7 în Dej, Cluj, Bistrița, Sălaj, Maramureș și toată România. Transport auto internațional în UE. Car towing and roadside assistance Romania EU. Pannenhilfe Rumänien. 10+ ani experiență.",
     url: "https://tractaridej.com",
     image: "https://tractaridej.com/START_SITE.jpeg",
     logo: "https://tractaridej.com/logo-chc.svg",
