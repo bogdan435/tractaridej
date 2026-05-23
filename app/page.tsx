@@ -27,6 +27,21 @@ export default function Home() {
     },
   ];
 
+  const seoHighlights = [
+    "tractări auto non-stop",
+    "platformă auto 24/7",
+    "tractări autostradă A3",
+    "transport auto avariat România",
+    "car towing Romania 24/7",
+    "vehicle transport Romania EU",
+    "roadside assistance Romania",
+    "car recovery Romania",
+    "Pannenhilfe Rumänien",
+    "Fahrzeugbergung Rumänien",
+    "Abschleppdienst Rumänien",
+    "Autotransport Rumänien EU",
+  ];
+
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -552,6 +567,73 @@ export default function Home() {
             ))}
           </div>
         </section>
+        <section
+          className="relative z-10 w-full"
+          style={{ maxWidth: "920px", margin: "32px auto 0", padding: "0 16px" }}
+        >
+          <div
+            style={{
+              border: "1px solid rgba(245,197,24,0.15)",
+              background: "rgba(255,255,255,0.03)",
+              padding: "20px",
+              boxShadow: "0 20px 60px rgba(0,0,0,0.18)",
+            }}
+          >
+            <p
+              className="seo-kicker"
+              style={{
+                color: "#8f8f8f",
+                fontSize: "0.75rem",
+                letterSpacing: "0.24em",
+                textTransform: "uppercase",
+                margin: "0 0 12px 0",
+              }}
+            >
+              Servicii si acoperire
+            </p>
+            <p
+              className="seo-copy"
+              style={{
+                color: "#cfcfcf",
+                fontSize: "0.9rem",
+                lineHeight: 1.7,
+                margin: 0,
+              }}
+            >
+              Oferim tractări, transport pe platformă și asistență rutieră în România
+              și în UE, pentru clienți locali și internaționali. Mai jos găsești
+              principalele tipuri de servicii și expresiile sub care ne caută
+              clienții în română, engleză și germană.
+            </p>
+            <div
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: "10px",
+                justifyContent: "center",
+                marginTop: "18px",
+              }}
+            >
+              {seoHighlights.map((highlight) => (
+                <span
+                  key={highlight}
+                  className="seo-chip"
+                  style={{
+                    border: "1px solid rgba(245,197,24,0.18)",
+                    background: "rgba(245,197,24,0.08)",
+                    color: "#f1f1f1",
+                    padding: "10px 14px",
+                    fontSize: "0.82rem",
+                    lineHeight: 1.4,
+                    letterSpacing: "0.03em",
+                  }}
+                >
+                  {highlight}
+                </span>
+              ))}
+            </div>
+          </div>
+        </section>
         <div
           style={{
             position: "relative",
@@ -648,7 +730,8 @@ export default function Home() {
 
           .hero-callout,
           .faq-kicker,
-          .intl-title {
+          .intl-title,
+          .seo-kicker {
             font-size: 0.675rem !important;
           }
 
@@ -657,6 +740,7 @@ export default function Home() {
           }
 
           .intl-copy,
+          .seo-copy,
           .faq-summary,
           .faq-answer {
             font-size: 0.7875rem !important;
@@ -664,6 +748,10 @@ export default function Home() {
 
           .intl-button {
             font-size: 0.765rem !important;
+          }
+
+          .seo-chip {
+            font-size: 0.738rem !important;
           }
 
           .partners-kicker {
