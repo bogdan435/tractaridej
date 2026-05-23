@@ -25,6 +25,11 @@ export default function Home() {
       answer:
         "Da, efectuăm tractări auto pe autostradă, inclusiv pe Autostrada A3, non-stop 24/7. Intervenim rapid pentru orice tip de vehicul: autoturisme, motociclete, dube și camioane.",
     },
+    {
+      question: "Efectuați transport auto internațional în Europa?",
+      answer:
+        "Da, efectuăm transport auto internațional în toată Europa: Germania, Austria, Italia, Franța, Polonia, Ungaria, Republica Cehă și alte țări UE. Șoferii noștri vorbesc engleză și germană. Contactați-ne pentru o ofertă personalizată.",
+    },
   ];
 
   const seoHighlights = [
