@@ -331,6 +331,137 @@ export default function Home() {
               </p>
             </div>
           </div>
+          <section
+            className="intl-section"
+            style={{
+              width: "min(920px, 100%)",
+              marginTop: "28px",
+              padding: "20px",
+              background: "rgba(230,230,230,0.94)",
+              border: "1px solid rgba(245,197,24,0.28)",
+              boxShadow: "0 18px 50px rgba(0,0,0,0.18)",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+                gap: "16px",
+                flexWrap: "wrap",
+                justifyContent: "center",
+              }}
+            >
+              <div
+                style={{
+                  flex: "1 1 320px",
+                  maxWidth: "420px",
+                  background: "rgba(255,255,255,0.72)",
+                  padding: "18px",
+                  textAlign: "left",
+                  border: "1px solid rgba(13,13,13,0.08)",
+                }}
+              >
+                <p
+                  className="intl-title"
+                  style={{
+                    color: "#0d0d0d",
+                    fontSize: "1rem",
+                    fontWeight: 800,
+                    letterSpacing: "0.03em",
+                    margin: "0 0 10px 0",
+                  }}
+                >
+                  🇬🇧 Car Towing & Auto Transport - Romania & EU
+                </p>
+                <p
+                  className="intl-copy"
+                  style={{
+                    color: "#333",
+                    fontSize: "0.92rem",
+                    lineHeight: 1.6,
+                    margin: 0,
+                  }}
+                >
+                  Broke down in Romania or abroad? We offer 24/7 car towing, platform
+                  transport, and roadside assistance across Romania and the EU. We speak
+                  English. Call us anytime: +40 767 121 351
+                </p>
+                <a
+                  className="intl-button"
+                  href="tel:+40767121351"
+                  style={{
+                    display: "inline-block",
+                    marginTop: "14px",
+                    color: "#0d0d0d",
+                    background: "#F5C518",
+                    fontSize: "0.85rem",
+                    fontWeight: 900,
+                    textDecoration: "none",
+                    padding: "12px 20px",
+                    letterSpacing: "0.06em",
+                    textTransform: "uppercase",
+                    clipPath: "polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%)",
+                  }}
+                >
+                  Call Now
+                </a>
+              </div>
+              <div
+                style={{
+                  flex: "1 1 320px",
+                  maxWidth: "420px",
+                  background: "rgba(255,255,255,0.72)",
+                  padding: "18px",
+                  textAlign: "left",
+                  border: "1px solid rgba(13,13,13,0.08)",
+                }}
+              >
+                <p
+                  className="intl-title"
+                  style={{
+                    color: "#0d0d0d",
+                    fontSize: "1rem",
+                    fontWeight: 800,
+                    letterSpacing: "0.03em",
+                    margin: "0 0 10px 0",
+                  }}
+                >
+                  🇩🇪 Fahrzeugbergung & Autotransport - Rumänien & EU
+                </p>
+                <p
+                  className="intl-copy"
+                  style={{
+                    color: "#333",
+                    fontSize: "0.92rem",
+                    lineHeight: 1.6,
+                    margin: 0,
+                  }}
+                >
+                  Panne in Rumänien oder im Ausland? Wir bieten 24/7 Pannenhilfe,
+                  Plattformtransport und Straßenhilfe in ganz Rumänien und der EU. Wir
+                  sprechen Deutsch. Rufen Sie uns jederzeit an: +40 767 121 351
+                </p>
+                <a
+                  className="intl-button"
+                  href="tel:+40767121351"
+                  style={{
+                    display: "inline-block",
+                    marginTop: "14px",
+                    color: "#0d0d0d",
+                    background: "#F5C518",
+                    fontSize: "0.85rem",
+                    fontWeight: 900,
+                    textDecoration: "none",
+                    padding: "12px 20px",
+                    letterSpacing: "0.06em",
+                    textTransform: "uppercase",
+                    clipPath: "polygon(10px 0%, 100% 0%, calc(100% - 10px) 100%, 0% 100%)",
+                  }}
+                >
+                  Jetzt anrufen
+                </a>
+              </div>
+            </div>
+          </section>
           <p
             className="hero-callout mb-3 text-gray-500 uppercase tracking-widest"
             style={{ fontSize: "0.75rem" }}
@@ -494,7 +625,8 @@ export default function Home() {
           }
 
           .hero-callout,
-          .faq-kicker {
+          .faq-kicker,
+          .intl-title {
             font-size: 0.675rem !important;
           }
 
@@ -502,9 +634,14 @@ export default function Home() {
             font-size: clamp(1.08rem, 4.5vw, 1.8rem) !important;
           }
 
+          .intl-copy,
           .faq-summary,
           .faq-answer {
             font-size: 0.7875rem !important;
+          }
+
+          .intl-button {
+            font-size: 0.765rem !important;
           }
 
           .partners-kicker {
