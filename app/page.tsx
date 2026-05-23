@@ -379,9 +379,7 @@ export default function Home() {
               width: "min(920px, 100%)",
               marginTop: "28px",
               padding: "20px",
-              background: "rgba(230,230,230,0.94)",
-              border: "1px solid rgba(245,197,24,0.28)",
-              boxShadow: "0 18px 50px rgba(0,0,0,0.18)",
+              background: "transparent",
             }}
           >
             <div
@@ -396,16 +394,17 @@ export default function Home() {
                 style={{
                   flex: "1 1 320px",
                   maxWidth: "420px",
-                  background: "rgba(255,255,255,0.72)",
+                  background: "rgba(20,20,20,0.85)",
                   padding: "18px",
                   textAlign: "left",
                   border: "1px solid rgba(13,13,13,0.08)",
+                  clipPath: "polygon(16px 0%, 100% 0%, calc(100% - 16px) 100%, 0% 100%)",
                 }}
               >
                 <p
                   className="intl-title"
                   style={{
-                    color: "#0d0d0d",
+                    color: "#F5C518",
                     fontSize: "1rem",
                     fontWeight: 800,
                     letterSpacing: "0.03em",
@@ -417,7 +416,7 @@ export default function Home() {
                 <p
                   className="intl-copy"
                   style={{
-                    color: "#333",
+                    color: "#cccccc",
                     fontSize: "0.92rem",
                     lineHeight: 1.6,
                     margin: 0,
@@ -451,16 +450,17 @@ export default function Home() {
                 style={{
                   flex: "1 1 320px",
                   maxWidth: "420px",
-                  background: "rgba(255,255,255,0.72)",
+                  background: "rgba(20,20,20,0.85)",
                   padding: "18px",
                   textAlign: "left",
                   border: "1px solid rgba(13,13,13,0.08)",
+                  clipPath: "polygon(16px 0%, 100% 0%, calc(100% - 16px) 100%, 0% 100%)",
                 }}
               >
                 <p
                   className="intl-title"
                   style={{
-                    color: "#0d0d0d",
+                    color: "#F5C518",
                     fontSize: "1rem",
                     fontWeight: 800,
                     letterSpacing: "0.03em",
@@ -472,7 +472,7 @@ export default function Home() {
                 <p
                   className="intl-copy"
                   style={{
-                    color: "#333",
+                    color: "#cccccc",
                     fontSize: "0.92rem",
                     lineHeight: 1.6,
                     margin: 0,
