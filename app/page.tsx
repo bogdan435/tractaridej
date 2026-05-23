@@ -93,7 +93,7 @@ export default function Home() {
       "@type": "ContactPoint",
       telephone: "+40767121351",
       contactType: "customer service",
-      availableLanguage: ["Romanian"],
+      availableLanguage: ["Romanian", "English", "German", "French"],
     },
     priceRange: "$$",
   };
